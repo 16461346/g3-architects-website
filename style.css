@@ -4,3 +4,63 @@
   font-variation-settings:
     "wdth" 100;
 }
+/*Comon Color Class start*/
+.dark1{
+  color: #131313;
+}
+.dark2{
+  color: #424242;
+}
+.dark3{
+  color: #727272;
+}
+.dark4{
+  color: #A1A1A1;
+}
+.dark5{
+  color: #D0D0D0;
+}
+.dark6{
+  color: #E7E7E7;
+}
+.dark7{
+  color: #F3F3F3;
+}
+.btn-color{
+  background-color: #ff900e;
+}
+.header-color{
+  background-color: rgba(255, 144, 14, 0.1);
+}
+/*Comon Color Class end*/
+a, li{
+  text-decoration: none;
+  list-style: none;
+}
+
+main, footer{
+  margin: 0 140px;
+}
+
+.left-logo{
+  font-size: 45px;
+  font-weight: bold;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.right-nav{
+  display: flex;
+  gap:  60px;
+  font-size: 18px;
+}
+/* .navbar, .banar{
+  max-width: 1440px;
+  margin: 0 auto;
+} */
+
+header{
+  padding: 0 140px 0 140px;
+}
