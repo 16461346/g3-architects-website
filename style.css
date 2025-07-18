@@ -8,6 +8,16 @@
   font-variation-settings:
     "wdth" 100;
 }
+
+.navbar, .banar{
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+main{
+  max-width: 1170px;
+  margin: 0 auto;
+}
 /*Comon Color Class start*/
 .dark1{
   color: #131313;
@@ -33,8 +43,20 @@
 .btn-color{
   background-color: #ff900e;
 }
+.primary-color{
+  color: #ff900e;
+}
 .header-color{
   background-color: rgba(255, 144, 14, 0.2);
+}
+.font-width{
+  font-weight: bold;
+}
+.medium-font{
+  font-weight: 500;
+}
+main > section{
+  margin-top: 130px;
 }
 /*Comon Color Class end*/
 a, li{
@@ -44,14 +66,15 @@ a, li{
 }
 
 main, footer{
-  margin: 0 140px;
+  max-width: 1170px;
+  margin: 0 auto;
 }
 
 .left-logo{
   font-size: 2.8rem;
   font-weight: bold;
 }
-nav{
+.navbar{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,13 +83,6 @@ nav{
   display: flex;
   font-size: 18px;
 }
-.navbar, .banar{
-  max-width: 1170px;
-  margin: 0 auto;
-}
-/* header{
-  padding: 0 140px 0 140px;
-} */
 
 .banar-box1{
   max-width: 850px;
@@ -76,7 +92,6 @@ nav{
 }
 .banar-title{
   font-size: 4rem;
-  font-weight: bold;
 }
 .primary-btn{
   margin-top: 30px;
@@ -89,15 +104,57 @@ nav{
 }
 .banar-img{
   padding-bottom: 30px;
-  margin-bottom: 65px;
   border-radius: 8px;
 }
 .banar-img img{
   width: 100%;
 }
+
+/* Main Tag > Section Number One 1 */
+.text-section h3{
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* Section Number Tow 3*/
+.section-2{
+  display: flex;
+  height: 1050px;
+  margin-top: 120px;
+}
+.section-1{
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+.image-section-1{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+.text-section{
+  max-width: 520px;
+}
+
+
 /* Responsive Header*/
+
 @media screen and (max-width:576px) {
-  nav, .right-nav{
+  .navbar,
+  .right-nav, 
+  .section-1{
+    flex-direction: column;
+  }
+  .image-section-1{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .text-section{
+    margin-left: 100px;
+  }
+}
+/*Medum device responsive*/
+@media screen and (min-width:576px) and (max-width:992px) {
+  .section-1{
     flex-direction: column;
   }
 }
